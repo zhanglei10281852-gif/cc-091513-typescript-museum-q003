@@ -1,0 +1,5 @@
+{
+  "request_states": ["draft", "submitted", "reviewing", "approved", "rejected", "withdrawn"],
+  "sampling_methods": ["surface_swab", "micro_drill", "section", "powder"],
+  "result_states": ["not_due", "due", "received", "overdue"]
+}
