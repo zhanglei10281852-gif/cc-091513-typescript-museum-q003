@@ -1,0 +1,35 @@
+{
+  "specimens": {
+    "spm_fossil_001": {
+      "id": "spm_fossil_001",
+      "name": "稀有完整古脊椎化石 F-001",
+      "initialMassMg": 10000,
+      "zones": [
+        { "id": "zone_reinforced_a", "name": "A 加固区", "reinforced": true, "initialMassMg": 8000 },
+        { "id": "zone_unreinforced_b", "name": "B 仅存未加固区", "reinforced": false, "initialMassMg": 2000 }
+      ],
+      "createdAt": "2026-09-01T00:00:00.000Z"
+    }
+  },
+  "users": {
+    "u_admin": { "id": "u_admin", "name": "平台主管", "role": "admin", "institutionId": null },
+    "u_dir_chen": { "id": "u_dir_chen", "name": "陈主任", "role": "director", "institutionId": "inst_nsm" },
+    "u_rev_li": { "id": "u_rev_li", "name": "李委员", "role": "reviewer", "institutionId": "inst_univ_a" },
+    "u_rev_wang": { "id": "u_rev_wang", "name": "王委员", "role": "reviewer", "institutionId": "inst_univ_b" },
+    "u_rev_zhao": { "id": "u_rev_zhao", "name": "赵委员", "role": "reviewer", "institutionId": "inst_univ_c" },
+    "u_rev_sun": { "id": "u_rev_sun", "name": "孙委员", "role": "reviewer", "institutionId": "inst_nsm" },
+    "u_app_zhou": { "id": "u_app_zhou", "name": "周研究员", "role": "applicant", "institutionId": "inst_univ_a" },
+    "u_app_wu": { "id": "u_app_wu", "name": "吴研究员", "role": "applicant", "institutionId": "inst_univ_b" },
+    "u_app_zheng": { "id": "u_app_zheng", "name": "郑研究员", "role": "applicant", "institutionId": "inst_univ_c" }
+  },
+  "recusals": [
+    {
+      "id": "rec_seed_1",
+      "reviewerId": "u_rev_sun",
+      "applicantId": null,
+      "institutionId": "inst_univ_b",
+      "reason": "孙委员与 B 校团队有合作论文，回避 B 校申请",
+      "createdAt": "2026-09-02T00:00:00.000Z"
+    }
+  ]
+}
