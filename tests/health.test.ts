@@ -7,6 +7,7 @@ test("健康信息包含服务名称", () => {
   assert.deepEqual(healthPayload(), {
     status: "ok",
     service: "馆藏科研取样决策服务",
+    ruleVersion: "1.0.0",
   });
 });
 
